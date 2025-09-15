@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+
+
+body{
+    background: linear-gradient(to bottom right, #020024, #090979, #00D4FF);
+    background-size: cover;
+    margin: 0;
+    cursor: url('pointed_cursor2.png') , auto;
+
+
+    /* background: hsl(224, 34%, 12%);
+    background-image: conic-gradient(from 0deg at 50% 50%, 
+    blue,
+    purple,
+    purple,
+    blue);
+    background-blend-mode: multiply;
+    color: white;
+    min-block-size: 100dvh;
+    display: grid;
+    place-items: center; */
+
+}
+
+.center{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+    position:relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .4);
+}
+
+
+/* .box:hover{
+    transform: scale(1.02);
+} */
+
+
+.cont{
+    display: grid;
+    grid-template-rows: 8rem 8rem 8rem;
+    grid-template-columns: 30rem;
+}
+
+.item1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: #0b69c7;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* .pic{
+    width: 140px;
+    height: 140px;
+    background-image: url("vincent.png");
+    background-size: cover;
+    border-radius: 70px;
+    position: relative;
+    bottom: 455px;
+    left: 170px;
+
+}
+
+.txt{
+    font-size: 30px;
+    position: relative;
+    bottom: 480px;
+    left: 160px;
+} */
+
+.photo{
+    /* background-color: blueviolet; */
+    background-image: url("vincent.png");
+    background-size: cover;
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    z-index: 2;
+    top: 55px;   /* half its height outside, adjust as needed */
+    left: 50%;    /* move to middle */
+    transform: translateX(-50%);
+    border-radius: 50%;
+    
+}
+
+.photo2{
+    background-color: rgb(255, 255, 255);
+    
+    /* background-image: url("vincent.png"); */
+    background-size: cover;
+    height: 145px;
+    width: 145px;
+    position: absolute;
+    z-index: 0;
+    top: 52.5px;   /* half its height outside, adjust as needed */
+    left: 50%;    /* move to middle */
+    transform: translateX(-50%);
+    /* box-shadow: 0 0 50px rgba(0, 0, 0, .3); */
+    
+    border-radius: 50%;
+    
+}
+
+.iam{
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 0;
+    opacity: .8;
+    top: 185px;   /* half its height outside, adjust as needed */
+    left: 50%;    /* move to middle */
+    transform: translateX(-50%);
+}
+
+.work p{
+    font-size: 1.3rem;
+    position: absolute;
+    font-weight: 400;
+    opacity: .8;
+    z-index: 0;
+    top: 220px;   /* half its height outside, adjust as needed */
+    left: 50%;    /* move to middle */
+    transform: translateX(-50%);
+}
+
+.social{
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    
+}
+
+.lin{
+    height:50px;
+    width: 50px;
+    background-color: pink;
+    position: relative;
+    border-radius: 50px;
+    /* margin-top: 140px; */
+    bottom: 100px;
+    left: 37%;
+    
+}
+
+.s1{
+    background-image: url("youtube.png");
+    background-size: cover;
+}
+
+.s2{
+    background-image: url("instagram.png");
+    background-size: cover;
+    
+}
+
+.s3{
+    background-image: url("facebook.png");
+    background-size: cover;
+}
+
+.s4{
+    background-image: url("linkedin.png");
+    background-size: cover;
+}
+
+.msg{
+    color:#3f72ec;
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    /* transform: translateX(-50%); */
+    top: 360px;
+    left: 18%;
+    
+    
+}
+
+.msg button{
+    font-size: 1rem;
+    color:#000000;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    line-height: 20px;
+}
+
+.last{
+    position: absolute;
+    display: flex;
+    top: 665px;
+    gap:80px;
+    opacity: 0.6;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    position: relative;
+    bottom: 250px;
+    left: 23%;
+}
+
+/* .center{
+    transform: perspective(5000px)
+    rotateY('20deg')
+    rotateX('20deg');
+} */
+
+.box {
+  background-color: rgb(235, 235, 235);
+  height: 30rem;
+  width: 30rem;
+  border-radius: 30px;
+  transition: transform 0.15s ease-out;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+
